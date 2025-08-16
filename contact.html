@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Ashwin S Portfolio - Web Developer, Designer, and Programmer. View skills, projects, and certificates.">
+  <meta name="keywords" content="Ashwin S, Web Developer, HTML, CSS, JavaScript, Portfolio, Projects, Certificates">
+  <meta name="author" content="Ashwin S">
+  <meta property="og:title" content="Contact - Ashwin S Portfolio">
+<meta property="og:description" content="Get in touch with Ashwin S for collaborations, freelance work, or project inquiries.">
+<meta property="og:image" content="https://cdn.statically.io/gh/ASHWIN07026/portfolio/main/assets/og-contact.jpg">
+<meta property="og:url" content="https://ashwin07026.github.io/portfolio/contact.html">
+<meta property="og:type" content="website">
+
+  <title>Contact - Ashwin S Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #eee;
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #1f1f1f;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    transition: background 0.3s ease;
+  }
+  header .logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #00ffc3;
+    letter-spacing: 2px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #00ffc3;
+    border-bottom: 2px solid #00ffc3;
+  }
+  main {
+    max-width: 900px;
+    margin: 120px auto 60px;
+    padding: 0 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  section {
+    background: #1e1e1e;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,255,195,0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #00ffc3;
+  }
+  p {
+    font-weight: 300;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  a.contact-link {
+    color: #00ffc3;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a.contact-link:hover {
+    color: #ffffff;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  form label {
+    color: #ccc;
+    font-weight: 300;
+  }
+  form input,
+  form textarea {
+    padding: 12px;
+    background: #2a2a2a;
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+  }
+  form textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  form button {
+    padding: 12px;
+    background: #00ffc3;
+    border: none;
+    color: #121212;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  form button:hover {
+    background: #00e0b0;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    color: #555;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  footer a {
+    color: #00ffc3;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  footer a:hover {
+    color: #ffffff;
+  }
+
+  @media (max-width: 600px) {
+    nav ul {
+      gap: 15px;
+    }
+  }
+
+  /* Light mode styles */
+  body.light {
+    background: #f9f9f9;
+    color: #222;
+  }
+  body.light header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  body.light header .logo {
+    color: #007a5f;
+  }
+  body.light nav ul li a {
+    color: #222;
+  }
+  body.light nav ul li a:hover,
+  body.light nav ul li a.active {
+    color: #007a5f;
+    border-bottom: 2px solid #007a5f;
+  }
+  body.light main {
+    background: #f9f9f9;
+    color: #222;
+  }
+  body.light section {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,122,95,0.1);
+  }
+  body.light p {
+    color: #555;
+  }
+  body.light a.contact-link {
+    color: #007a5f;
+  }
+  body.light a.contact-link:hover {
+    color: #004d3a;
+  }
+  body.light footer {
+    background: #ffffff;
+    color: #777;
+  }
+  body.light footer a {
+    color: #007a5f;
+  }
+  body.light footer a:hover {
+    color: #004d3a;
+  }
+
+  /* Toggle button styles */
+  .mode-toggle {
+    background: transparent;
+    border: 2px solid #00ffc3;
+    color: #00ffc3;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+  .mode-toggle:hover {
+    background: #00ffc3;
+    color: #121212;
+  }
+  body.light .mode-toggle {
+    border-color: #007a5f;
+    color: #007a5f;
+  }
+  body.light .mode-toggle:hover {
+    background: #007a5f;
+    color: #f9f9f9;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Ashwin S</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="certificate.html">Certificates</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Mode toggle button -->
+  <button class="mode-toggle" id="modeToggle" aria-label="Toggle light/dark mode">
+    <i class="fas fa-moon"></i> Light Mode
+  </button>
+</header>
+
+<main>
+  <section>
+    <h2>Contact Me</h2>
+
+    <form action="mailto:aa4674904@gmail.com" method="POST" enctype="text/plain" onsubmit="alert('Thank you for your message! I will get back to you soon.');">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="Message" placeholder="Your message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <p>Email: <a href="mailto:aa4674904@gmail.com" class="contact-link">aa4674904@gmail.com</a></p>
+    <p>Phone: <a href="tel:+917558103183" class="contact-link">+91 7558103183</a></p>
+    <p>Location: <a href="https://maps.app.goo.gl/gMm2ZnL645rzLFqQ7" class="Location-link">Tirupur,Tamil Nadu</a></p>
+    <p>Feel free to reach out via email or LinkedIn for collaboration or project inquiries.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Ashwin S Portfolio</p>
+  <p>
+    <a href="https://www.linkedin.com/in/ashwin-s-650b48329" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/ASHWIN07026" target="_blank" rel="noopener noreferrer" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="aa4674904@gmail.com" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </p>
+</footer>
+
+<script>
+  const modeToggle = document.getElementById('modeToggle');
+  const body = document.body;
+
+  // Load saved mode on page load
+  const savedMode = localStorage.getItem('mode');
+  if (savedMode === 'light') {
+    body.classList.add('light');
+    modeToggle.innerHTML = '<i class="fas fa-sun"></i> Dark Mode';
+  } else {
+    body.classList.remove('light');
+    modeToggle.innerHTML = '<i class="fas fa-moon"></i> Light Mode';
+  }
+
+  modeToggle.addEventListener('click', () => {
+    if (body.classList.contains('light')) {
+      body.classList.remove('light');
+      localStorage.setItem('mode', 'dark');
+      modeToggle.innerHTML = '<i class="fas fa-moon"></i> Light Mode';
+    } else {
+      body.classList.add('light');
+      localStorage.setItem('mode', 'light');
+      modeToggle.innerHTML = '<i class="fas fa-sun"></i> Dark Mode';
+    }
+  });
+</script>
+
+</body>
+</html>

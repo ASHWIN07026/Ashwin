@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Ashwin S Portfolio - Web Developer, Designer, and Programmer. View skills, projects, and certificates.">
+  <meta name="keywords" content="Ashwin S, Web Developer, HTML, CSS, JavaScript, Portfolio, Projects, Certificates">
+  <meta name="author" content="Ashwin S">
+  <meta property="og:title" content="Certificates - Ashwin S Portfolio">
+<meta property="SQL Boodescription" content="View professional certifications earned by Ashwin S from Udemy, Coursera, freeCodeCamp, and more.">
+<meta property="og:image" content="https://cdn.statically.io/gh/ASHWIN07026/portfolio/main/assets/og-certificates.jpg">
+<meta property="og:url" content="https://ashwin07026.github.io/portfolio/certificates.html">
+<meta property="og:type" content="website">
+
+  <title>Certificate - Ashwin S Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<!-- Lightbox CSS -->
+
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #eee;
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #1f1f1f;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    transition: background 0.3s ease;
+  }
+  header .logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #00ffc3;
+    letter-spacing: 2px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #00ffc3;
+    border-bottom: 2px solid #00ffc3;
+  }
+  main {
+    max-width: 900px;
+    margin: 120px auto 60px;
+    padding: 0 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  section {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,255,195,0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #00ffc3;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .certificate-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .certificate {
+    background: #292929;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,255,195,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .certificate:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 255, 195, 0.4);
+  }
+  .certificate h3 {
+    color: #00ffc3;
+    margin-bottom: 10px;
+  }
+  .certificate p {
+    font-weight: 300;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  .certificate img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .certificate a.download-link {
+    color: #00ffc3;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    color: #555;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  footer a {
+    color: #00ffc3;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  footer a:hover {
+    color: #ffffff;
+  }
+  @media (max-width: 600px) {
+    nav ul {
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+  }
+
+  /* Light mode styles */
+  body.light {
+    background: #f9f9f9;
+    color: #222;
+  }
+  body.light header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  body.light header .logo {
+    color: #007a5f;
+  }
+  body.light nav ul li a {
+    color: #222;
+  }
+  body.light nav ul li a:hover,
+  body.light nav ul li a.active {
+    color: #007a5f;
+    border-bottom: 2px solid #007a5f;
+  }
+  body.light main {
+    background: #f9f9f9;
+    color: #222;
+  }
+  body.light section {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,122,95,0.1);
+  }
+  body.light .certificate {
+    background: #f0f6f3;
+    box-shadow: 0 2px 8px rgba(0,122,95,0.2);
+  }
+  body.light .certificate h3 {
+    color: #007a5f;
+  }
+  body.light .certificate p {
+    color: #555;
+  }
+  body.light footer {
+    background: #ffffff;
+    color: #777;
+  }
+  body.light footer a {
+    color: #007a5f;
+  }
+  body.light footer a:hover {
+    color: #004d3a;
+  }
+
+  /* Toggle button styles */
+  .mode-toggle {
+    background: transparent;
+    border: 2px solid #00ffc3;
+    color: #00ffc3;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+  .mode-toggle:hover {
+    background: #00ffc3;
+    color: #121212;
+  }
+  body.light .mode-toggle {
+    border-color: #007a5f;
+    color: #007a5f;
+  }
+  body.light .mode-toggle:hover {
+    background: #007a5f;
+    color: #f9f9f9;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Ashwin S</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="certificate.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Mode toggle button -->
+  <button class="mode-toggle" id="modeToggle" aria-label="Toggle light/dark mode">
+    <i class="fas fa-moon"></i> Light Mode
+  </button>
+</header>
+
+<main>
+<section>
+  <h1>My Certificates</h1>
+  <div class="certificate-list">
+      <div class="certificate">
+      <h3>TCSion</h3>
+      <a href="certificateimages/TCSion.jpg" data-lightbox="certificates" data-title="TCS iON Career Edge - Young Professional">
+        <img src="certificateimages/TCSion.jpg" alt="TCS iON Career Edge - Young Professional" />
+      </a>
+      <p>Issued by TCSion - 2025</p>
+      <a href="certificateimages/TCSion.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>Viksit bharat</h3>
+      <a href="certificateimages/Viksit bharat.jpg" data-lightbox="certificates" data-title="Viksit bharat">
+        <img src="certificateimages/Viksit bharat.jpg" alt="Viksit bharat" />
+      </a>
+      <p>Issued by Government - 2024</p>
+      <a href="certificateimages/Viksit bharat.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>AI</h3>
+      <a href="certificateimages/AI.jpg" data-lightbox="certificates" data-title="AI">
+        <img src="certificateimages/AI.jpg" alt="AI" />
+      </a>
+      <p>Issued by Lets Upgrade- 2025</p>
+      <a href="certificateimages/AI.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>NXT WAVE</h3>
+      <a href="certificateimages/NXTWAVE.jpg" data-lightbox="certificates" data-title="NXTWAVE">
+        <img src="certificateimages/NXTWAVE.jpg" alt="NXTWAVE" />
+      </a>
+      <p>Issued by NXT WAVE - 2024</p>
+      <a href="certificateimages/NXTWAVE.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>CyberSecurity</h3>
+      <a href="certificateimages/CyberSecurity.jpg" data-lightbox="certificates" data-title="CyberSecurity">
+        <img src="certificateimages/CyberSecurity.jpg" alt="CyberSecurity" />
+      </a>
+      <p>Issued by HP- 2025</p>
+      <a href="certificateimages/CyberSecurity.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>Data Science with Python</h3>
+      <a href="certificateimages/DataSciencewithPython.jpg" data-lightbox="certificates" data-title="DataSciencewithPython">
+        <img src="certificateimages/DataSciencewithPython.jpg" alt="Data Science with Python" />
+      </a>
+      <p>Issued by Lets Upgrade- 2025</p>
+      <a href="certificateimages/DataSciencewithPython.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>Excel Bootcamp</h3>
+      <a href="certificateimages/Excel Bootcamp.jpg" data-lightbox="certificates" data-title="Excel">
+        <img src="certificateimages/Excel Bootcamp.jpg" alt="Excel" />
+      </a>
+      <p>Issued by Lets Upgrade- 2025</p>
+      <a href="certificateimages/Excel Bootcamp.jpg" download class="download-link">Download Certificate</a>
+    </div>
+        <div class="certificate">
+      <h3>Guvi</h3>
+      <a href="certificateimages/GuviCertificate.jpg" data-lightbox="certificates" data-title="Chatgpt for Everyone">
+        <img src="certificateimages/GuviCertificate.jpg" alt="Chatgpt for Everyone" />
+      </a>
+      <p>Issued by Guvi 2025</p>
+      <a href="certificateimages/GuviCertificate.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>HTML&CSS</h3>
+      <a href="certificateimages/HTML&CSS.jpg" data-lightbox="certificates" data-title="HTML&CSS">
+        <img src="certificateimages/HTML&CSS.jpg" alt="HTML&CSS" />
+      </a>
+      <p>Issued by Lets Upgrade- 2025</p>
+      <a href="certificateimages/HTML&CSS.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>Mysql</h3>
+      <a href="certificateimages/SQL bootcamp certificate.jpg" data-lightbox="certificates" data-title="MYSQL">
+        <img src="certificateimages/SQL bootcamp certificate.jpg" alt="MYSQL" />
+      </a>
+      <p>Issued by Lets Upgrade- 2025</p>
+      <a href="certificateimages/SQL bootcamp certificate.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>Resume writing</h3>
+      <a href="certificateimages/Resume writing.jpg" data-lightbox="certificates" data-title="Resume writing">
+        <img src="certificateimages/Resume writing.jpg" alt="Resume writing" />
+      </a>
+      <p>Issued by HP 2025</p>
+      <a href="certificateimages/Resume writing.jpg" download class="download-link">Download Certificate</a>
+    </div>
+        <div class="certificate">
+      <h3>Paper Presentation</h3>
+      <a href="certificateimages/clg.jpg" data-lightbox="certificates" data-title="Paper Presentation">
+        <img src="certificateimages/clg.jpg" alt="Paper Presentation" />
+      </a>
+      <p>Issued by Jai Shriram Engineering college 2025</p>
+      <a href="certificateimages/clg.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>Code Debugging</h3>
+      <a href="certificateimages/colg.jpg" data-lightbox="certificates" data-title="Code Debugging">
+        <img src="certificateimages/colg.jpg" alt="Code Debugging" />
+      </a>
+      <p>Issued by Jai Shriram Engineering college 2025</p>
+      <a href="certificateimages/colg.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>Jumbled code</h3>
+      <a href="certificateimages/code.jpg" data-lightbox="certificates" data-title="Jumbled code">
+        <img src="certificateimages/code.jpg" alt="Jumbled code" />
+      </a>
+      <p>Issued by Jai Shriram Engineering college 2025</p>
+      <a href="certificateimages/code.jpg" download class="download-link">Download Certificate</a>
+    </div>
+    <div class="certificate">
+      <h3>Full stack Developer</h3>
+      <a href="certificateimages/full stack.jpg" data-lightbox="certificates" data-title="Full stack Developer">
+        <img src="certificateimages/full stack.jpg" alt="Full stack Developer" />
+      </a>
+      <p>Issued by Simplilearn|skillup 2025</p>
+      <a href="certificateimages/full stack.jpg" download class="download-link">Download Certificate</a>
+    </div>
+
+    <!-- Add more certificates here -->
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2025 Ashwin S Portfolio</p>
+  <p>
+    <a href="https://www.linkedin.com/in/ashwin-s-650b48329" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/ASHWIN07026" target="_blank" rel="noopener noreferrer" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="mailto:sa0323165@gmail.com" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </p>
+</footer>
+
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<script>
+  const toggleBtn = document.getElementById('modeToggle');
+  const body = document.body;
+
+  // Load saved mode from localStorage
+  if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light');
+    toggleBtn.innerHTML = '<i class="fas fa-sun"></i> Dark Mode';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('light');
+    if(body.classList.contains('light')) {
+      toggleBtn.innerHTML = '<i class="fas fa-sun"></i> Dark Mode';
+      localStorage.setItem('theme', 'light');
+    } else {
+      toggleBtn.innerHTML = '<i class="fas fa-moon"></i> Light Mode';
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>
+
+</body>
+</html>

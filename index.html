@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ashwin S Portfolio - Web Developer, Designer, and Programmer. View skills, projects, and certificates.">
+  <meta name="keywords" content="Ashwin S, Web Developer, HTML, CSS, JavaScript, Portfolio, Projects, Certificates">
+  <meta name="author" content="Ashwin S">
+  <meta property="og:title" content="Ashwin S Portfolio - Web Developer">
+  <meta property="og:description" content="Welcome to the personal portfolio of Ashwin S. Discover skills, projects, and achievements.">
+  <meta property="og:image" content="https://cdn.statically.io/gh/ASHWIN07026/portfolio/main/assets/og-home.jpg">
+  <meta property="og:url" content="https://ashwin07026.github.io/portfolio/">
+  <meta property="og:type" content="website">
+
+  <title>Home - Ashwin S Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
+      color: #eee;
+      line-height: 1.6;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: #1f1f1f;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+    .logo {
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: #00ffc3;
+      letter-spacing: 2px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav ul li a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+      transition: 0.3s;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #00ffc3;
+      border-bottom: 2px solid #00ffc3;
+    }
+    main {
+      max-width: 900px;
+      margin: 120px auto 60px;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 60px;
+      padding: 30px 20px;
+      border-top: 1px solid #333;
+      background: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,255,195,0.1);
+    }
+    section:first-of-type {
+      border-top: none;
+      background: transparent;
+      box-shadow: none;
+      padding-top: 0;
+    }
+    h1, h2 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    p {
+      font-weight: 300;
+      color: #ccc;
+    }
+    img.profile-pic {
+      width: 250px;
+      height: 250px;
+      border-radius: 60%;
+      display: block;
+      margin: 40px auto;
+      border: 5px solid #00ffc3;
+      box-shadow: 0 0 10px #00ffc3;
+      transition: transform 0.4s ease;
+    }
+    img.profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    /* Resume Button */
+    .resume-btn {
+      display: inline-block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      background: #00ffc3;
+      color: #121212;
+      font-weight: 600;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s ease;
+      text-align: center;
+    }
+    .resume-btn:hover {
+      background: #00cfa0;
+    }
+    body.light .resume-btn {
+      background: #007a5f;
+      color: #fff;
+    }
+    body.light .resume-btn:hover {
+      background: #005c48;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f1f1f;
+      color: #555;
+      font-size: 14px;
+    }
+    footer a {
+      color: #00ffc3;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    /* Light Mode */
+    body.light {
+      background: #f9f9f9;
+      color: #222;
+    }
+    body.light header {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    body.light .logo {
+      color: #007a5f;
+    }
+    body.light nav ul li a {
+      color: #222;
+    }
+    body.light nav ul li a:hover,
+    body.light nav ul li a.active {
+      color: #007a5f;
+      border-bottom: 2px solid #007a5f;
+    }
+    body.light section {
+      background: #fff;
+      border-top: 1px solid #ccc;
+      box-shadow: 0 4px 12px rgba(0,122,95,0.1);
+    }
+    body.light section:first-of-type {
+      background: transparent;
+      box-shadow: none;
+    }
+    body.light p {
+      color: #555;
+    }
+    body.light img.profile-pic {
+      border-color: #007a5f;
+      box-shadow: 0 0 10px #007a5f;
+    }
+    body.light footer {
+      background: #fff;
+      color: #777;
+    }
+    body.light footer a {
+      color: #007a5f;
+    }
+    body.light footer a:hover {
+      color: #004d3a;
+    }
+
+    .mode-toggle {
+      background: transparent;
+      border: 2px solid #00ffc3;
+      color: #00ffc3;
+      padding: 6px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    .mode-toggle:hover {
+      background: #00ffc3;
+      color: #121212;
+    }
+    body.light .mode-toggle {
+      border-color: #007a5f;
+      color: #007a5f;
+    }
+    body.light .mode-toggle:hover {
+      background: #007a5f;
+      color: #f9f9f9;
+    }
+
+    /* Responsive Fixes */
+    @media only screen and (max-width: 767px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+      }
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: flex-start;
+      }
+      .profile-pic {
+        width: 160px;
+        height: 160px;
+      }
+      h1 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        padding: 0 10px;
+      }
+      section {
+        padding: 20px 15px;
+      }
+      .mode-toggle {
+        align-self: flex-end;
+        margin-top: 10px;
+      }
+      .resume-btn {
+        display: block;
+        width: fit-content;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Ashwin S</div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="certificate.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="mode-toggle" id="modeToggle" aria-label="Toggle light/dark mode">
+    <i class="fas fa-moon"></i> Light Mode
+  </button>
+</header>
+
+<main>
+  <section id="home">
+    <h1>Hello, I'm Ashwin S</h1>
+    <p>Front-end developer passionate about crafting clean and modern websites.</p>
+    <img src="profile/Ashwin.jpeg" alt="Ashwin S Photo" class="profile-pic" />
+    <a href="resume.pdf" download class="resume-btn">
+      <i class="fas fa-download"></i> Download Resume
+    </a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Ashwin S Portfolio</p>
+  <p>
+    <a href="https://www.linkedin.com/in/ashwin-s-650b48329" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/ASHWIN07026" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:sa0323165@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://x.com/sad_ash28657" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  </p>
+</footer>
+
+<script>
+  const modeToggle = document.getElementById('modeToggle');
+  const body = document.body;
+  const savedMode = localStorage.getItem('mode');
+
+  if (savedMode === 'light') {
+    body.classList.add('light');
+    modeToggle.innerHTML = '<i class="fas fa-sun"></i> Dark Mode';
+  } else {
+    modeToggle.innerHTML = '<i class="fas fa-moon"></i> Light Mode';
+  }
+
+  modeToggle.addEventListener('click', () => {
+    if (body.classList.contains('light')) {
+      body.classList.remove('light');
+      localStorage.setItem('mode', 'dark');
+      modeToggle.innerHTML = '<i class="fas fa-moon"></i> Light Mode';
+    } else {
+      body.classList.add('light');
+      localStorage.setItem('mode', 'light');
+      modeToggle.innerHTML = '<i class="fas fa-sun"></i> Dark Mode';
+    }
+  });
+</script>
+<script>
+  function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  }
+  if (isMobileDevice()) {
+    document.body.classList.add('mobile-view');
+    console.log("Mobile device detected");
+  } else {
+    document.body.classList.add('desktop-view');
+    console.log("Desktop/Laptop device detected");
+  }
+</script>
+</body>
+</html>
